@@ -14,7 +14,7 @@ serie: learn
 
 
 ---
-Today in this article , I will be telling you the step by step procedure for setting up i3 windows manager. For, those who don't know what it is, let me tell you about i3 in a brief.
+Today in this article , I will be telling you the step by step procedure for setting up i3 windows manager. For, those who don't know what it is, let me tell you about i3 in brief.
 
 i3 is primarily targeted at advanced users and developers. i3 is not a desktop environment in the sense of things like KDE and Gnome, or even the lightweight Xfce and LXDE. Unlike traditional desktop environments, window managers are flat, terminal-like environments that work in terms of workspaces and tiles. Window managers are independent from a GUI. As it is extremely lightweight,it doesn't require high-end hardwares, also it is highly customizable.
 
