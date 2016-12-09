@@ -37,9 +37,10 @@ Now you can logout and login with i3.
 
 Now lets start with the configutation.
 
-i3 by default keeps the configuration file in `~/.config/i3/config`
+i3 by default keeps the configuration file in `~/.config/i3/config`.
 Some of the applications needs to be run at startup, feh and nm-applets 
 which set the wallpaper and shows network manager at i3bar respectively.
+
 ```bash
 #Startup programs
 exec --no-startup-id nm-applet
@@ -47,6 +48,7 @@ exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.png
 ```
 
 Next, to set a keybinding for taking screenshots, you need to install `scrot`, a command-line tool for taking screenshot.
+
 ```bash
 sudo apt-get install scrot
 ```
