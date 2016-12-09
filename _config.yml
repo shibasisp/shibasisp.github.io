@@ -1,8 +1,8 @@
 # Site settings
 title: Shibasis Patel
 description: "A Computer science and Engineering Undergraduate "
-baseurl: "" # the subpath of your site
-url: ""
+baseurl: "/" # the subpath of your site
+url: "http://shibasisp.github.io"
 
 # User settings
 username: shibasisp
