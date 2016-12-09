@@ -137,7 +137,7 @@ A precompiled .deb installer for Ubuntu 16.04 LTS is also available to download 
 
 Or you can head on to their [github repo](https://github.com/horst3180/arc-theme)
 
-**Extra applications you can try out **
+__**Extra applications you can try out**__
 
 * compton
 
