@@ -139,15 +139,15 @@ Or you can head on to their [github repo](https://github.com/horst3180/arc-theme
 
 **Extra applications you can try out **
 
-1. compton
+* compton
 
 A pretty sweet composite manager. I like some shadows and fading effects on my windows and menus. Install it with sudo apt install compton.
 
-2. parcellite
+* parcellite
 
 A simple, lightweight clipboard manager. Install it with sudo apt install parcellite.
 
-3. pnmixer
+* pnmixer
 
 Volume control tray icon. Install it with sudo apt install pnmixer.
 
