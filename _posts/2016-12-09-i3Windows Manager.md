@@ -17,8 +17,10 @@ serie: learn
 Today in this article , I will be telling you the step by step procedure for setting up i3 windows manager. For, those who don't know what it is, let me tell you about i3 in a brief.
 
 i3 is primarily targeted at advanced users and developers. i3 is not a desktop environment in the sense of things like KDE and Gnome, or even the lightweight Xfce and LXDE. Unlike traditional desktop environments, window managers are flat, terminal-like environments that work in terms of workspaces and tiles. Window managers are independent from a GUI. As it is extremely lightweight,it doesn't require high-end hardwares, also it is highly customizable.
+
 ### Installing i3
 To begin with, open terminal and run the following command.
+
 ```bash
 sudo apt-get install i3 i3status i3lock feh
 ```
@@ -30,6 +32,7 @@ sudo apt-get install i3 i3status i3lock feh
 Now you can logout and login with i3.
 
 ### Customising i3
+
 * During the first startup, i3 will ask you to set your default `$Mod` key and copy the configutation file to ~/.config/i3 . You can set it anything you want but I would suggest you to keep it default.
 
 Now lets start with the configutation.
@@ -48,6 +51,7 @@ Next, to set a keybinding for taking screenshots, you need to install `scrot`, a
 sudo apt-get install scrot
 ```
 Setting the keybindings
+
 ```bash
 #Take a screenshot upon pressing $mod+ ptrscs
 
@@ -55,6 +59,7 @@ bindsym Print exec scrot $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.p
 ```
 For screen locking, i3lock can be used.
 to set a keybinding,
+
 ```bash
 #screen lock
 bindsym Mod1+l i3lock -c 000000 -n
@@ -102,12 +107,13 @@ Do not forget to copy the i3status.conf to ~/.i3/i3status.conf
 ```bash
 cp /etc/i3status.conf ~/.i3/i3status.conf
 ```
-Changing the fonts
+**Changing the fonts**
 ```bash
 font pango:Open Sans 8
 ```
 Next, Setting up a theme for gtk3, gtk2 and gnome-shell. I chosed arc-theme, you can choose whatever you liked..
 To add the ArcGTK repo run
+
 `sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"`
 
 Then, refresh your software sources and install the theme:
