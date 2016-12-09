@@ -2,7 +2,7 @@
 layout: post
 title: Introduction
 comments: true
-permalink: /shibasisp.github.io/:title
+permalink:/:title
 image: ''
 date:   2016-09-12 00:06:31
 tags:
