@@ -137,4 +137,19 @@ A precompiled .deb installer for Ubuntu 16.04 LTS is also available to download 
 
 Or you can head on to their [github repo](https://github.com/horst3180/arc-theme)
 
+**Extra applications you can try out **
+
+1. compton
+
+A pretty sweet composite manager. I like some shadows and fading effects on my windows and menus. Install it with sudo apt install compton.
+
+2. parcellite
+
+A simple, lightweight clipboard manager. Install it with sudo apt install parcellite.
+
+3. pnmixer
+
+Volume control tray icon. Install it with sudo apt install pnmixer.
+
+
 
