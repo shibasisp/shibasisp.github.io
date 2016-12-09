@@ -1,0 +1,47 @@
+# Site settings
+title: Shibasis Patel
+description: "A Computer science and Engineering Undergraduate "
+baseurl: "" # the subpath of your site
+url: ""
+
+# User settings
+username: shibasisp
+user_title: Shibasis Patel
+email: smartshibasish@gmail.com
+twitter_username: smartshibasish
+github_username:  shibasisp
+gplus_username:  117886173601007569467
+disqus_username: smartshibasish
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+links:
+  - title: home
+    url: /
+  - title: my posts
+    url: /posts
+  - title: series
+    url: /series
+  - title: tags
+    url: /tags
+  - title: about me
+    url: /about
+# projects in header index
+projects:
+  - name: DevMeet
+    url: https://github.com/shibasisp/DevMeet
+  
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
