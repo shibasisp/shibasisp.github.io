@@ -4,9 +4,9 @@ title: Customising i3 Windows Manager
 comments: true
 permalink: /:title
 image: ''
-date:   2016-09-12 00:06:31
+date:   2016-12-09 00:06:31
 tags:
-- mongodb
+- linux
 description: ''
 categories:
 - Introduction
