@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customising i3 Windows Manager
+title: Customizing i3 Windows Manager
 comments: true
 permalink: /:title
 image: ''
@@ -31,7 +31,7 @@ sudo apt-get install i3 i3status i3lock feh
 
 Now you can logout and login with i3.
 
-### Customising i3
+### Customizing i3
 
 * During the first startup, i3 will ask you to set your default `$Mod` key and copy the configutation file to ~/.config/i3 . You can set it anything you want but I would suggest you to keep it default.
 
