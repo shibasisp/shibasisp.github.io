@@ -109,12 +109,20 @@ Do not forget to copy the i3status.conf to ~/.i3/i3status.conf
 ```bash
 cp /etc/i3status.conf ~/.i3/i3status.conf
 ```
-
+#### Beautification
 **Changing the fonts**
 ```bash
 font pango:Open Sans 8
 ```
-Next, Setting up a theme for gtk3, gtk2 and gnome-shell. I chosed arc-theme, you can choose whatever you liked..
+[gnome-look](https://www.gnome-look.org/) is a great resource for gtk themes. 
+I chosed arc-theme but you can find one that strikes your fancy and extract it's archive to either $HOME/.themes (local install) or /usr/share/themes (global install). Then open up `lxappearance` and apply the new theme.
+
+Some themes require newer versions of gtk installed. To find version of gtk we're using, run in a terminal 
+
+```bash
+dpkg -l libgtk* | grep -e '^i' | grep -e 'libgtk-*[0-9]'.
+```
+
 To add the ArcGTK repo run
 
 `sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"`
