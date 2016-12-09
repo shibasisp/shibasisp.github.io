@@ -114,7 +114,10 @@ Then, refresh your software sources and install the theme:
 `sudo apt-get update && sudo apt-get install arc-theme`
 
 `sudo apt-key add - < Release.key`
+
 A precompiled .deb installer for Ubuntu 16.04 LTS is also available to download from the theme website:
 <a href="http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/all" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/all', 'Arc GTK Theme Installer for Ubuntu 16.04 LTS']);" class="omg-button download-link" target="_blank" title="Download Arc GTK Theme for Ubuntu 16.04 LTS">Arc GTK Theme Installer for Ubuntu 16.04 LTS</a>
+
+Or you can head on to their [github repo](https://github.com/horst3180/arc-theme)
 
 
