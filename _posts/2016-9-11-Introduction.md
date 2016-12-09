@@ -9,7 +9,6 @@ description: ''
 categories:
 - Introduction
 serie: learn
-comment_count:true
 
 
 ---
