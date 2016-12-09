@@ -109,6 +109,7 @@ Do not forget to copy the i3status.conf to ~/.i3/i3status.conf
 ```bash
 cp /etc/i3status.conf ~/.i3/i3status.conf
 ```
+
 **Changing the fonts**
 ```bash
 font pango:Open Sans 8
