@@ -33,7 +33,7 @@ Now you can logout and login with i3.
 
 For a complete list of i3 commands you can visit [refcard page](https://i3wm.org/docs/refcard.html)
 
- ### Customizing i3
+### Customizing i3
 
 * During the first startup, i3 will ask you to set your default `$Mod` key and copy the configutation file to ~/.config/i3 . You can set it anything you want but I would suggest you to keep it default.
 
@@ -107,13 +107,12 @@ bar {
 	status_command i3status -c ~/.i3/i3status.conf
 }
 ```
-Do not forget to copy the i3status.conf to ~/.i3/i3status.conf
+Do not forget to copy the i3status.conf to `~/.i3/i3status.conf`
 
 ```bash
 cp /etc/i3status.conf ~/.i3/i3status.conf
 ```
-
-** To Enable multimedia keyboard keys **
+**To Enable multimedia keyboard keys**
 
 
 ```bash
@@ -163,19 +162,19 @@ A precompiled .deb installer for Ubuntu 16.04 LTS is also available to download 
 
 Or you can head on to their [github repo](https://github.com/horst3180/arc-theme)
 
-__**Extra applications you can try out**__
+__Extra applications you can try out__
 
-* compton
+1. compton
 
-A pretty sweet composite manager. I like some shadows and fading effects on my windows and menus. Install it with sudo apt install compton.
+    A pretty sweet composite manager. I like some shadows and fading effects on my windows and menus. Install it with sudo apt install compton.
 
-* parcellite
+2. parcellite
 
-A simple, lightweight clipboard manager. Install it with sudo apt install parcellite.
+    A simple, lightweight clipboard manager. Install it with sudo apt install parcellite.
 
-* pnmixer
+3. pnmixer
 
-Volume control tray icon. Install it with sudo apt install pnmixer.
+    Volume control tray icon. Install it with sudo apt install pnmixer.
 
 **Screenshots**
 <img src= "/assets/img/i3wm/2016-12-10-145049_1920x1080_scrot.png">
