@@ -31,7 +31,9 @@ sudo apt-get install i3 i3status i3lock feh
 
 Now you can logout and login with i3.
 
-### Customizing i3
+For a complete list of i3 commands you can visit [refcard page](https://i3wm.org/docs/refcard.html)
+
+ ### Customizing i3
 
 * During the first startup, i3 will ask you to set your default `$Mod` key and copy the configutation file to ~/.config/i3 . You can set it anything you want but I would suggest you to keep it default.
 
@@ -108,6 +110,24 @@ bar {
 Do not forget to copy the i3status.conf to ~/.i3/i3status.conf
 ```bash
 cp /etc/i3status.conf ~/.i3/i3status.conf
+```
+** To Enable multimedia keyboard keys **
+
+```bash
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+```
+
+where `1` in Pulse audio controls is the sink number found with
+
+```bash
+pactl list sinks
 ```
 #### Beautification
 **Changing the fonts**
