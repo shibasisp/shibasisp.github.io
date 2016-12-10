@@ -108,10 +108,13 @@ bar {
 }
 ```
 Do not forget to copy the i3status.conf to ~/.i3/i3status.conf
+
 ```bash
 cp /etc/i3status.conf ~/.i3/i3status.conf
 ```
+
 ** To Enable multimedia keyboard keys **
+
 
 ```bash
 # Pulse Audio controls
@@ -129,8 +132,11 @@ where `1` in Pulse audio controls is the sink number found with
 ```bash
 $ pactl list sinks
 ```
+
 #### Beautification
+
 **Changing the fonts**
+
 ```bash
 font pango:Open Sans 8
 ```
