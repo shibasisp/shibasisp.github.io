@@ -127,7 +127,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 where `1` in Pulse audio controls is the sink number found with
 
 ```bash
-pactl list sinks
+$ pactl list sinks
 ```
 #### Beautification
 **Changing the fonts**
