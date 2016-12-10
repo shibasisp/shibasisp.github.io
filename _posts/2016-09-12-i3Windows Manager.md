@@ -177,5 +177,8 @@ A simple, lightweight clipboard manager. Install it with sudo apt install parcel
 
 Volume control tray icon. Install it with sudo apt install pnmixer.
 
+**Screenshots**
+<img src= "/assets/img/i3wm/2016-12-10-145049_1920x1080_scrot.png">
+
 
 
