@@ -61,16 +61,27 @@ Setting the keybindings
 
 bindsym Print exec scrot $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png
 ```
-For screen locking, i3lock can be used.
-to set a keybinding,
+**Screen Locking**
 
+~~For screen locking, i3lock can be used.
+to set a keybinding,~~
+
+
+>~~bindsym Mod1+l i3lock -c 000000 -n~~
+
+~~you can use any rgb colour you want. Just replace `000000` with the color's hex code. or you can set an image for the lock screen.
+For that just replace `i3lock -c 000000 -n` with  `i3lock -i your-image-path -p default -n`~~
+
+Edit: I got a better method for the screen-locking.
+I use `gnome-screensaver` to lock my screen with `gnome-screensaver-command -l` command.
+For autolocking , I use `xautolock`
 ```bash
-#screen lock
-bindsym Mod1+l i3lock -c 000000 -n
+exec xautolock -time 1 -locker screenlock
 ```
-you can use any rgb colour you want. Just replace `000000` with the color's hex code. or you can set an image for the lock screen.
-For that just replace `i3lock -c 000000 -n` with  `i3lock -i your-image-path -p default -n`
-
+The above line in the config file execute the screenlock command after every 1 minute of inactivity. Also to bind the Mod+Ctrl+l keys to lock the screen, I added below script to my config file.
+```bash
+bindsym Control+Mod1+l exec gnome-screensaver-command -l
+``` 
 #### Setting named namespace
 ```bash
 # Name the workspaces
@@ -130,6 +141,70 @@ where `1` in Pulse audio controls is the sink number found with
 
 ```bash
 $ pactl list sinks
+```
+
+**Battery Low Warning**
+
+By default, if the battery level fall below a threshold, the color of battery status text in the i3 bar turns red which I usually don't notice.For this, I have used a script I found on archlinux forum’s i3 thread. This script needs `acpi` installed and root permissions to run, so add a no-password entry for it in the sudoers file. You will also need `pm-utils` for power management. Then add it in the config file.You need to use `exec_always sudo /path/to/script.sh`, to run at restart also. 
+
+```bash
+#! /bin/bash
+
+SLEEP_TIME=5   # Default time between checks.
+SAFE_PERCENT=30  # Still safe at this level.
+DANGER_PERCENT=15  # Warn when battery at this level.
+CRITICAL_PERCENT=5  # Hibernate when battery at this level.
+
+NAGBAR_PID=0
+export DISPLAY=:0.0
+
+function launchNagBar
+{
+    i3-nagbar -m 'Battery low!' -b 'Hibernate!' 'pm-hibernate' >/dev/null 2>&1 &
+    NAGBAR_PID=$!
+}
+
+function killNagBar
+{
+    if [[ $NAGBAR_PID -ne 0 ]]; then
+        ps -p $NAGBAR_PID | grep "i3-nagbar"
+        if [[ $? -eq 0 ]]; then
+            kill $NAGBAR_PID
+        fi
+        NAGBAR_PID=0
+    fi
+}
+
+
+while [ true ]; do
+
+    killNagBar
+
+    if [[ -n $(acpi -b | grep -i discharging) ]]; then
+        pm-powersave true
+        rem_bat=$(acpi -b | grep -Eo "[0-9]+%" | grep -Eo "[0-9]+")
+
+        if [[ $rem_bat -gt $SAFE_PERCENT ]]; then
+            SLEEP_TIME=10
+        else
+            SLEEP_TIME=5
+            if [[ $rem_bat -le $DANGER_PERCENT ]]; then
+                SLEEP_TIME=2
+                launchNagBar
+            fi
+            if [[ $rem_bat -le $CRITICAL_PERCENT ]]; then
+                SLEEP_TIME=1
+                pm-hibernate
+            fi
+        fi
+    else
+        pm-powersave false
+        SLEEP_TIME=10
+    fi
+
+    sleep ${SLEEP_TIME}m
+
+done
 ```
 
 #### Beautification
