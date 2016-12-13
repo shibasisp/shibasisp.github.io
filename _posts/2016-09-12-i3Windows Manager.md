@@ -82,7 +82,9 @@ The above line in the config file execute the screenlock command after every 1 m
 ```bash
 bindsym Control+Mod1+l exec gnome-screensaver-command -l
 ``` 
+
 #### Setting named namespace
+
 ```bash
 # Name the workspaces
 set $tag1 "1: www"
