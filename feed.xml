@@ -14,6 +14,10 @@ layout: null
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
+	<author_detail>
+   		<name>{{ site.user_title}}</name>
+   		<email>{{ site.email }}</email>
+ 	</author_detail>
         <description>{{ post.content | xml_escape | strip_html | truncatewords:100 }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
