@@ -27,7 +27,6 @@ The community bonding period is about to end in 3 days after this post. This is 
 
 [Simon Perkin](https://github.com/sjperkins) proposed to use [pybind11](https://github.com/pybind/pybind11) instead of [Boost.Python](http://www.boost.org/doc/libs/1_58_0/libs/python/doc/) as it is a lightweight header-only library and its syntax are similar to Boost.Python whereas Boost.Python requires binary libraries. Also, I had a hard time while installing Boost.Python in my system and compiling my first program. However, we would do it after finishing other goals.
 
-We have a scheduled meeting on 30th May, when we will discuss more about the project. I will edit this post after that.
 
 This is the first time in my life that I am working with a team to make something that will actually be used by someone. Though it will take a little time to learn to work with goals and timelines, but I guess this is what I am here to learn.
 
