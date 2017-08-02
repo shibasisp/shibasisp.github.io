@@ -4,7 +4,7 @@ title: End of phase#2. Phase#3 begins...
 comments: true
 permalink: /:title
 image: ''
-date:   2017-07-15 00:17:34
+date:   2017-07-31 00:17:34
 tags:
 - GSoC
 description: End of phase#2. Phase#3 begins...
