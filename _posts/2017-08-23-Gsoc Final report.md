@@ -19,7 +19,7 @@ These awesome three months of summer spent developing for python-casacore under 
 
 As per the requirement of GSoC, this article consists of a brief description of the work i have done, and the things that could not be done, what is left to do, what are future plans of the project, links to works that were merged and links to patches that were not.
 
-Most of the tasks mentioned in the [proposal](https://storage.googleapis.com/summerofcode-prod.appspot.com/gsoc/core_project/doc/4875372463128576_1491143172_OpenAstronomyGSoC-2017Application3.pdf?Expires=1502555575&GoogleAccessId=summerofcode-prod%40appspot.gserviceaccount.com&Signature=otv3V%2BFfcEqN3FXYjzUa084wvjofrfetgKO75IXGa66oipuayB%2Bt5IA6mEd3zB9YO0ySrD6rcAOGbKM%2B31An5h45ZIgVVr%2BAh%2BOWAyxEDyiFNF9%2BVdKK7zGyhWG2bhrj0rrISBNso4DWEpbcXoZzrActQYb%2BOEhT6PxsEpTfAZLW1G2HO4JVlrMgtWUbAII2Z8U%2FD469cXU%2B7rUzJHCoZuQI18MLI%2BxJgBy8ibg9QVb2L9aWq5Oz3q27p4NoVsCzhhlnWSRybon8UhJgiH160oNKrYqyNC5a6OOI3J%2BfIAsT3zSn%2Bpq7v5qzOglEsXWVuDdoPY4C7kaqy1uZPiKLBQ%3D%3D) were discussed and worked upon. 
+Most of the tasks mentioned in the [proposal](https://docs.google.com/document/d/1c8HlyVIIm97uhh3ig-dpKNGeM8UbDpyoRI3oHrBSPvs/edit) were discussed and worked upon. 
 
 **Links to the major patch submissions:**
 
