@@ -53,7 +53,7 @@ Most of the tasks mentioned in the [proposal](https://docs.google.com/document/d
 
 
 
-Forked Branch: [python-casacore](https://github.com/shibasisp/python-casacore)
+Forked Repository: [python-casacore](https://github.com/shibasisp/python-casacore)
 
 
 
