@@ -15,7 +15,7 @@ serie: learn
 
 ---
 
-These awesome three months of summer spent developing for python-casacore under Google Summer of Code, have filled me with great zeal and zest. The adventurous journey of thousand lines of code comes to an end.  This entire project was quite informative and filled me with lots of good experiences and knowledge. I thank [*OpenAstronomy*](http://openastronomy.org/) organization for accepting my GSoC proposal and my mentor [*Tammo Jan Dijkema*](https://github.com/tammojan)  for helping me throughout this project.
+These awesome three months of summer spent developing for python-casacore under Google Summer of Code, have filled me with great zeal and zest. The adventurous journey of thousand lines of code comes to an end.  This entire project was quite informative and filled me with lots of good experiences and knowledge. I thank [*OpenAstronomy*](http://openastronomy.org/) organization for accepting my GSoC proposal and my mentor [*Tammo Jan Dijkema*](https://github.com/tammojan) and the community for helping me throughout this project.
 
 As per the requirement of GSoC, this article consists of a brief description of the work i have done, and the things that could not be done, what is left to do, what are future plans of the project, links to works that were merged and links to patches that were not.
 
@@ -49,11 +49,11 @@ Most of the tasks mentioned in the [proposal](https://docs.google.com/document/d
 
 **Bonus Work**
 
-[porting python bindings from using boost::python to pybind11](https://github.com/shibasisp/python-casacore/tree/pybind11)(Not yet completed.)
+[porting python bindings from using boost::python to pybind11](https://github.com/shibasisp/python-casacore/tree/pybind11)
 
 
 
-Forked Branch: https://github.com/shibasisp/python-casacore
+Forked Branch: [python-casacore](https://github.com/shibasisp/python-casacore)
 
 
 
