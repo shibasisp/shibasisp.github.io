@@ -1,3 +1,0 @@
-{% if page.comment_count %}
-<script id="dsq-count-scr" src="//shibasisp.disqus.com/count.js" async></script>
-{% endif %}
