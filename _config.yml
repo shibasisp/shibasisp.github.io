@@ -16,7 +16,7 @@ paginate_path: "page/:num"
 categories_path : categories.html
 tags_path : tags.html
 
-BASE_PATH : "http://www.techievirus.com"
+BASE_PATH : "http://localhost:4000"
 baseurl: "/"
 
 
@@ -31,6 +31,7 @@ author:
   github: shibasisp
   twitter: shibasispatel
   facebook: shibasisp
+  linkedin: shibasisp
   googleplus: 117886173601007569467
   bio: "Spreading Awesomeness"
   uno-dbyll: /assets/media/TECHE-VIRUS.png
